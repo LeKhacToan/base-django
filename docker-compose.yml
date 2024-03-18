@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  api-service:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    restart: always
+    command: "gunicorn basedjango.wsgi:application --bind 0.0.0.0:9005 --log-level debug  --access-logfile - --error-logfile -"
+    env_file: .env
+    ports:
+        - 9005:9005
+    volumes:
+        - ./:/app

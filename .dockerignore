@@ -1,0 +1,9 @@
+.git
+Dockerfile
+.gitignore
+README.md
+db.sqlite3
+venv
+.env
+.env.example
+tests

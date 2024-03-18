@@ -1,0 +1,11 @@
+__pycache__
+.vscode
+venv
+env
+.env
+docker.env
+.idea/
+test.py
+media
+static
+.coverage
