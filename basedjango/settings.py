@@ -161,6 +161,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'account.User'
 
 REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'apps.core.exception.custom_exception_handler',
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
     ),
